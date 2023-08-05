@@ -1,7 +1,10 @@
-import World from './world';
+import { notExistedSample, primitiveSample, anySample } from './basic';
+import unknownSample from './basic/unknown';
 
-const root = document.getElementById('root');
+primitiveSample();
 
-const world = new World('Hello GIN');
+notExistedSample();
 
-world.sayHello(root);
+anySample();
+
+unknownSample();
