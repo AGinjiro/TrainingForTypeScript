@@ -1,10 +1,10 @@
-import { notExistedSample, primitiveSample, anySample } from './basic';
-import unknownSample from './basic/unknown';
+import { logMessage } from './function/basic';
+import { sumProductsPrice, isUserSignedIn } from './function/parameters';
 
-primitiveSample();
+logMessage('Hello World');
+isUserSignedIn('ABC', 'Gin');
+isUserSignedIn('aaa');
 
-notExistedSample();
+const sum = sumProductsPrice(9000, 30000, 500);
 
-anySample();
-
-unknownSample();
+console.log(sum);
